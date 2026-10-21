@@ -10,6 +10,11 @@
 <body>
     <header>
         <h1>My Career</h1>
+        <div class="header-dino-scene" aria-hidden="true">
+            <span class="header-dino"></span>
+            <span class="header-cactus"></span>
+            <span class="header-ground"></span>
+        </div>
     </header>
     <main>
         <div class="nav-bar">
@@ -26,7 +31,105 @@
                     <h2>My Career</h2>
                 </div>
                 <div class="main-content-body">
-                    <p>This is the Career page.</p>
+                   <div class="career-tabs" role="tablist" aria-label="Career history">
+    <button id="education-tab" class="career-tab" role="tab"
+            aria-selected="true" aria-controls="education-panel">
+        Education
+    </button>
+    <button id="work-tab" class="career-tab" role="tab"
+            aria-selected="false" aria-controls="work-panel" tabindex="-1">
+        Work
+    </button>
+</div>
+
+<section id="education-panel" class="career-panel" role="tabpanel"
+         aria-labelledby="education-tab" tabindex="0">
+    <div class="career-timeline">
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Master's studies in Media Informatics (M.Sc.)</h3>
+                <p>HTW Berlin · 2023–present</p>
+            </div>
+            <span class="career-entry-mark" aria-hidden="true">HTW</span>
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Bachelor's degree in Media Informatics (B.Sc.)</h3>
+                <p>HTW Berlin · 2018–2023</p>
+            </div>
+            <span class="career-entry-mark" aria-hidden="true">HTW</span>
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Studies in Engineering Informatics</h3>
+                <p>HTW Berlin · 2017–2018</p>
+            </div>
+            <span class="career-entry-mark" aria-hidden="true">HTW</span>
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>High school exchange year (Junior Year)</h3>
+                <p>California, USA · 2013–2014</p>
+            </div>
+            <span class="career-entry-mark" aria-hidden="true">CA</span>
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Abitur (German university entrance qualification)</h3>
+                <p>Archenhold-Oberschule, Berlin · 2010–2017</p>
+            </div>
+            <span class="career-entry-mark" aria-hidden="true">AO</span>
+        </article>
+    </div>
+</section>
+
+<section id="work-panel" class="career-panel" role="tabpanel"
+         aria-labelledby="work-tab" tabindex="0" hidden>
+    <div class="career-timeline">
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Working Student / Intern</h3>
+                <p>gematik GmbH, Berlin · September 2022–present</p>
+            </div>
+            <img class="career-entry-mark" src="../assets/career-logo-gematik.png" alt="gematik logo" />
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Intern</h3>
+                <p>Volkswagen Commercial Vehicles · January–June 2022</p>
+            </div>
+            <img class="career-entry-mark" src="../assets/career-logo-vw.png" alt="Volkswagen logo" />
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Intern and Video Editor</h3>
+                <p>Little Dot Studios · 2021</p>
+            </div>
+            <img class="career-entry-mark" src="../assets/career-logo-littledotstudios.png" alt="Little Dot Studios logo" />
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Logger, "The Voice of Germany"</h3>
+                <p>Bildergarten Entertainment · 2020–2021</p>
+            </div>
+            <img class="career-entry-mark" src="../assets/career-logo-voiceofgermany.jpg" alt="The Voice of Germany logo" />
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Service Team Member</h3>
+                <p>Penta Hotel Berlin Köpenick · 2016–2018</p>
+            </div>
+            <img class="career-entry-mark" src="../assets/career-logo-pentahotels.png" alt="Penta Hotels logo" />
+        </article>
+        <article class="career-entry">
+            <div class="career-entry-copy">
+                <h3>Part-time Waiter</h3>
+                <p>California, USA · 2013–2014</p>
+            </div>
+            <span class="career-entry-mark" aria-hidden="true">CA</span>
+        </article>
+    </div>
+</section>
                 </div>
             </div>
         </div>
@@ -34,5 +137,7 @@
     <footer>
         <p>&copy; 2024 Niklas Lengert. All rights reserved.</p>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
