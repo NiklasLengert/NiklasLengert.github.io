@@ -21,3 +21,27 @@ careerTabs.forEach((tab, index) => {
         }
     });
 });
+// Projects page: add new projects here, one object each.
+const projects = [
+    {
+        name: "Niklas_Small_Java_Projects",
+        description: "A collection of small Java mini games and tools: a calculator, a currency converter, a Pokémon guessing game, and Tic-Tac-Toe.",
+        url: "https://github.com/NiklasLengert/Niklas_Small_Java_Projects",
+        tags: ["Java", "Mini Games"],
+    },
+];
+
+const projectGrid = document.querySelector(".project-grid");
+
+if (projectGrid) {
+    projectGrid.innerHTML = projects
+        .map(
+            (p) => `
+            <a class="project-card" href="${p.url}" target="_blank" rel="noopener">
+                <h3>${p.name}</h3>
+                <p>${p.description}</p>
+                <div class="project-tags">${p.tags.map((t) => `<span>${t}</span>`).join("")}</div>
+            </a>`
+        )
+        .join("");
+}
