@@ -7,9 +7,9 @@
     <title>Contact Me</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
+<body data-page="contact">
     <header>
-        <h1>Contact Me</h1>
+        <h1 data-i18n="contact.title">Contact Me</h1>
         <div class="header-dino-scene" aria-hidden="true">
             <span class="header-dino"></span>
             <span class="header-cactus"></span>
@@ -18,22 +18,26 @@
     </header>
     <main>
         <div class="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="career.html">My Career</a>
-            <a href="projects.html">My Projects</a>
-            <a href="contact.html" aria-current="page">Contact Me</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="career.html" data-i18n="nav.career">My Career</a>
+            <a href="projects.html" data-i18n="nav.projects">My Projects</a>
+            <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact Me</a>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-aria-label="language.label">
+                <button class="language-button" type="button" data-language="de" aria-label="German" data-i18n-aria-label="language.german" aria-pressed="false">DE</button>
+                <button class="language-button" type="button" data-language="en" aria-label="English" data-i18n-aria-label="language.english" aria-pressed="false">EN</button>
+            </div>
         </div>
 
         <div class="main-content-wrapper">
             <div class="main-content-block">
                 <div class="main-content-header">
-                    <img src="../assets/telephone-svgrepo-com.svg" alt="Contact Me Icon" class="content-icon" />
-                    <h2>Contact</h2>
+                    <img src="../assets/telephone-svgrepo-com.svg" alt="Contact Me Icon" class="content-icon" data-i18n-alt="contact.iconAlt" />
+                    <h2 data-i18n="contact.heading">Contact</h2>
                 </div>
                 <div class="main-content-body">
                     <div class="contact-method">
-                        <img src="../assets/mail-pencil-svgrepo-com.svg" alt="Email Icon" class="content-icon"/>
-                        <a href="mailto:niklas.lengert@gmail.com?subject=Contact%20from%20your%20website">niklas.lengert@gmail.com</a>
+                        <img src="../assets/mail-pencil-svgrepo-com.svg" alt="Email Icon" class="content-icon" data-i18n-alt="contact.emailIcon"/>
+                        <a href="mailto:niklas.lengert@gmail.com?subject=Contact%20from%20your%20website" data-email-address="niklas.lengert@gmail.com" data-i18n-email-subject="contact.emailSubject">niklas.lengert@gmail.com</a>
                     </div>
                     <div class="contact-method">
                         <img src="../assets/linkedin-svgrepo-com.svg" alt="LinkedIn Icon" class="content-icon"/>
@@ -52,7 +56,8 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Niklas Lengert. All rights reserved.</p>
+        <p data-i18n="footer">&copy; 2024 Niklas Lengert. All rights reserved.</p>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

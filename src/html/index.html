@@ -7,7 +7,7 @@
     <title>Niklas Lengert Website</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body> 
+<body data-page="home">
     <header>
         <h1>Niklas Lengert</h1>
         <div class="header-dino-scene" aria-hidden="true">
@@ -18,39 +18,33 @@
     </header>
     <main>
         <div class="nav-bar">
-            <a href="index.html" aria-current="page">Home</a>
-            <a href="career.html">My Career</a>
-            <a href="projects.html">My Projects</a>
-            <a href="contact.html">Contact Me</a>
+            <a href="index.html" aria-current="page" data-i18n="nav.home">Home</a>
+            <a href="career.html" data-i18n="nav.career">My Career</a>
+            <a href="projects.html" data-i18n="nav.projects">My Projects</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact Me</a>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-aria-label="language.label">
+                <button class="language-button" type="button" data-language="de" aria-label="German" data-i18n-aria-label="language.german" aria-pressed="false">DE</button>
+                <button class="language-button" type="button" data-language="en" aria-label="English" data-i18n-aria-label="language.english" aria-pressed="false">EN</button>
+            </div>
         </div>
 
         <div class="main-content-wrapper">
             <div class="main-content-block">
                 <div class="main-content-header">
-                    <img src="../assets/house-user-svgrepo-com.svg" alt="About Me Icon" class="content-icon" />
-                    <h2>Welcome</h2>
+                    <img src="../assets/house-user-svgrepo-com.svg" alt="About Me Icon" class="content-icon" data-i18n-alt="home.iconAlt" />
+                    <h2 data-i18n="home.welcome">Welcome</h2>
                 </div>
                 <div class="main-content-body">
-                    <p>Hi, I'm Niklas. <br /> <br /> I'm a Media Computer Science master's student at HTW Berlin and a passionate software developer. 
-                        Through my practical experience – working as a student developer at Gematik GmbH and Volkswagen Commercial Vehicles – I’ve gained solid hands-on experience in software development. <br /><br />
-                        I love working with clean code, modern cloud environments, and solving technical challenges. 
-                        Whether it's TypeScript, Java, C#, or Python, I enjoy diving into new tech stacks, building practical projects, and collaborating with teams to find smart solutions. 
-                        Take a look around to learn more about my work!
-                    </p>
-                    <h2>About Me</h2>
-                    <p>I was born and raised in Berlin, Germany, and have lived here my whole life, apart from spending a year abroad in California during high school. 
-                        I love traveling with friends and family and am passionate about almost any kind of sport. 
-                        I’ve played tennis for over 10 years, swam for several years, played soccer, and love to go hiking whenever I get the chance. 
-                        I'm also a lifelong gamer. What started with a Game Boy Advance at age five has turned into a genuine passion for the medium. 
-                        From growing up with Pokémon, Zelda, and Sonic to playing RPGs, action games, and indie titles today, gaming is still a big part of my life. 
-                        Overall, I love exploring new experiences whether through travel, sports, or video games and I value learning, creativity, and connecting with people who share similar passions.
-                    </p>
+                    <p data-i18n="home.intro">Hi, I'm Niklas. I'm a Media Computer Science master's student at HTW Berlin and a passionate software developer. Through my practical experience – working as a student developer at Gematik GmbH and Volkswagen Commercial Vehicles – I’ve gained solid hands-on experience in software development. I love working with clean code, modern cloud environments, and solving technical challenges. Whether it's TypeScript, Java, C#, or Python, I enjoy diving into new tech stacks, building practical projects, and collaborating with teams to find smart solutions. Take a look around to learn more about my work!</p>
+                    <h2 data-i18n="home.aboutTitle">About Me</h2>
+                    <p data-i18n="home.about">I was born and raised in Berlin, Germany, and have lived here my whole life, apart from spending a year abroad in California during high school. I love traveling with friends and family and am passionate about almost any kind of sport. I’ve played tennis for over 10 years, swam for several years, played soccer, and love to go hiking whenever I get the chance. I'm also a lifelong gamer. What started with a Game Boy Advance at age five has turned into a genuine passion for the medium. From growing up with Pokémon, Zelda, and Sonic to playing RPGs, action games, and indie titles today, gaming is still a big part of my life. Overall, I love exploring new experiences whether through travel, sports, or video games and I value learning, creativity, and connecting with people who share similar passions.</p>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Niklas Lengert. All rights reserved.</p>
+        <p data-i18n="footer">&copy; 2024 Niklas Lengert. All rights reserved.</p>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 </html>

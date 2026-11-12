@@ -7,9 +7,9 @@
     <title>My Career</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
+<body data-page="career">
     <header>
-        <h1>My Career</h1>
+        <h1 data-i18n="career.title">My Career</h1>
         <div class="header-dino-scene" aria-hidden="true">
             <span class="header-dino"></span>
             <span class="header-cactus"></span>
@@ -18,27 +18,31 @@
     </header>
     <main>
         <div class="nav-bar">
-            <a href="index.html">Home</a>
-            <a href="career.html" aria-current="page">My Career</a>
-            <a href="projects.html">My Projects</a>
-            <a href="contact.html">Contact Me</a>
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="career.html" aria-current="page" data-i18n="nav.career">My Career</a>
+            <a href="projects.html" data-i18n="nav.projects">My Projects</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact Me</a>
+            <div class="language-switch" role="group" aria-label="Language" data-i18n-aria-label="language.label">
+                <button class="language-button" type="button" data-language="de" aria-label="German" data-i18n-aria-label="language.german" aria-pressed="false">DE</button>
+                <button class="language-button" type="button" data-language="en" aria-label="English" data-i18n-aria-label="language.english" aria-pressed="false">EN</button>
+            </div>
         </div>
 
         <div class="main-content-wrapper">
             <div class="main-content-block">
                 <div class="main-content-header">
-                    <img src="../assets/trophy-svgrepo-com.svg" alt="My Career Icon" class="content-icon" />
-                    <h2>My Career</h2>
+                    <img src="../assets/trophy-svgrepo-com.svg" alt="My Career Icon" class="content-icon" data-i18n-alt="career.iconAlt" />
+                    <h2 data-i18n="career.title">My Career</h2>
                 </div>
                 <div class="main-content-body">
-                   <div class="career-tabs" role="tablist" aria-label="Career history">
+                   <div class="career-tabs" role="tablist" aria-label="Career history" data-i18n-aria-label="career.tablist">
     <button id="education-tab" class="career-tab" role="tab"
             aria-selected="true" aria-controls="education-panel">
-        Education
+        <span data-i18n="career.education">Education</span>
     </button>
     <button id="work-tab" class="career-tab" role="tab"
             aria-selected="false" aria-controls="work-panel" tabindex="-1">
-        Work
+        <span data-i18n="career.work">Work</span>
     </button>
 </div>
 
@@ -47,36 +51,36 @@
     <div class="career-timeline">
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Master's studies in Media Informatics (M.Sc.)</h3>
-                <p>HTW Berlin · 2023–present</p>
+                <h3 data-i18n="career.master">Master's studies in Media Informatics (M.Sc.)</h3>
+                <p data-i18n="career.masterDate">HTW Berlin · 2023–present</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-htw.png" alt="HTW logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Bachelor's degree in Media Informatics (B.Sc.)</h3>
-                <p>HTW Berlin · 2018–2023</p>
+                <h3 data-i18n="career.bachelor">Bachelor's degree in Media Informatics (B.Sc.)</h3>
+                <p data-i18n="career.bachelorDate">HTW Berlin · 2018–2023</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-htw.png" alt="HTW logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Studies in Engineering Informatics</h3>
-                <p>HTW Berlin · 2017–2018</p>
+                <h3 data-i18n="career.engineering">Studies in Engineering Informatics</h3>
+                <p data-i18n="career.engineeringDate">HTW Berlin · 2017–2018</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-htw.png" alt="HTW logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>High school exchange year (Junior Year)</h3>
-                <p>California, USA · 2013–2014</p>
+                <h3 data-i18n="career.exchange">High school exchange year (Junior Year)</h3>
+                <p data-i18n="career.exchangeDate">California, USA · 2013–2014</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-riponhigh.jpeg" alt="California logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Abitur (German university entrance qualification)</h3>
-                <p>Archenhold-Oberschule, Berlin · 2010–2017</p>
+                <h3 data-i18n="career.abitur">Abitur (German university entrance qualification)</h3>
+                <p data-i18n="career.abiturDate">Archenhold-Oberschule, Berlin · 2010–2017</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-archenhold.jpeg" alt="Archenhold-Oberschule logo" />
         </article>
@@ -88,43 +92,43 @@
     <div class="career-timeline">
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Working Student / Intern</h3>
-                <p>gematik GmbH, Berlin · September 2022–present</p>
+                <h3 data-i18n="career.gematikRole">Working Student / Intern</h3>
+                <p data-i18n="career.gematikDate">gematik GmbH, Berlin · September 2022–present</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-gematik.png" alt="gematik logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Intern</h3>
-                <p>Volkswagen Commercial Vehicles · January–June 2022</p>
+                <h3 data-i18n="career.vwRole">Intern</h3>
+                <p data-i18n="career.vwDate">Volkswagen Commercial Vehicles · January–June 2022</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-vw.png" alt="Volkswagen logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Intern and Video Editor</h3>
-                <p>Little Dot Studios · 2021</p>
+                <h3 data-i18n="career.littleDotRole">Intern and Video Editor</h3>
+                <p data-i18n="career.littleDotDate">Little Dot Studios · 2021</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-littledotstudios.png" alt="Little Dot Studios logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Logger, "The Voice of Germany"</h3>
-                <p>Bildergarten Entertainment · 2020–2021</p>
+                <h3 data-i18n="career.voiceRole">Logger, "The Voice of Germany"</h3>
+                <p data-i18n="career.voiceDate">Bildergarten Entertainment · 2020–2021</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-voiceofgermany.jpg" alt="The Voice of Germany logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Service Team Member</h3>
-                <p>Penta Hotel Berlin Köpenick · 2016–2018</p>
+                <h3 data-i18n="career.pentaRole">Service Team Member</h3>
+                <p data-i18n="career.pentaDate">Penta Hotel Berlin Köpenick · 2016–2018</p>
             </div>
             <img class="career-entry-mark" src="../assets/career-logo-pentahotels.png" alt="Penta Hotels logo" />
         </article>
         <article class="career-entry">
             <div class="career-entry-copy">
-                <h3>Part-time Waiter</h3>
-                <p>California, USA · 2013–2014</p>
+                <h3 data-i18n="career.waiterRole">Part-time Waiter</h3>
+                <p data-i18n="career.waiterDate">California, USA · 2013–2014</p>
             </div>
             <span class="career-entry-mark" aria-hidden="true">CA</span>
         </article>
@@ -135,7 +139,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Niklas Lengert. All rights reserved.</p>
+        <p data-i18n="footer">&copy; 2024 Niklas Lengert. All rights reserved.</p>
     </footer>
 
     <script src="../js/main.js"></script>
