@@ -23,3 +23,15 @@ To serve it locally over HTTP, run a static web server from the repository root.
 
 ```bash
 python3 -m http.server
+
+src/
+├── assets/       # Icons and career-related images
+├── css/
+│   └── style.css # Site styles and responsive layouts
+├── html/
+│   ├── index.html
+│   ├── career.html
+│   ├── projects.html
+│   └── contact.html
+└── js/
+    └── main.js   # Career tabs and project listings
